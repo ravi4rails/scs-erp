@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require custom
+//= require jquery.metisMenu
 //= require_tree .
