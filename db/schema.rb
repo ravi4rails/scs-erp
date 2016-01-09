@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109070103) do
+ActiveRecord::Schema.define(version: 20160109072623) do
 
   create_table "roles", force: :cascade do |t|
     t.string   "name"
@@ -42,10 +42,12 @@ ActiveRecord::Schema.define(version: 20160109070103) do
     t.string   "blood_group"
     t.string   "nationality"
     t.string   "relegion"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "encrypted_password", default: "", null: false
   end
 
+  add_index "students", ["email"], name: "index_students_on_email", unique: true
   add_index "students", ["user_id"], name: "index_students_on_user_id"
 
   create_table "users", force: :cascade do |t|
