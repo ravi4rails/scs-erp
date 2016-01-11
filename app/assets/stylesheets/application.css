@@ -13,6 +13,7 @@
  *= require_tree .
  *= require bootstrap
  *= require bootstrap-theme
+ *= require jquery-ui
  *= require custom
  *= require font-awesome
  *= require morris

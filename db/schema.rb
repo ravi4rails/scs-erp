@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109130402) do
+ActiveRecord::Schema.define(version: 20160111083624) do
 
   create_table "conversations", force: :cascade do |t|
     t.integer  "sender_id"
@@ -44,6 +44,30 @@ ActiveRecord::Schema.define(version: 20160109130402) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], name: "index_roles_on_name"
+
+  create_table "students", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "middle_name"
+    t.string   "last_name"
+    t.string   "father_name"
+    t.string   "mother_name"
+    t.string   "contact_1"
+    t.string   "contact_2"
+    t.string   "relegion"
+    t.string   "cast"
+    t.string   "category"
+    t.string   "admission_number"
+    t.date     "admission_date"
+    t.string   "enrollment_number"
+    t.integer  "age"
+    t.date     "date_of_birth"
+    t.text     "permanent_address"
+    t.text     "residential_address"
+    t.string   "nationality"
+    t.string   "blood_group"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

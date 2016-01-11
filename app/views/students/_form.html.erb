@@ -1,0 +1,173 @@
+<div class="container">
+  <div class="col-sm-12">
+    <div class="col-sm-9 pull-right">
+      <div class="col-sm-12">
+        <%= form_for(@student) do |f| %>
+          <% if @student.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+              <ul>
+              <% @student.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :first_name %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :first_name, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :middle_name %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :middle_name, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :last_name %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :last_name, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :father_name %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :father_name, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :mother_name %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :mother_name, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :age %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.number_field :age, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :date_of_birth %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :date_of_birth, class: "form-control datepicker" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :relegion %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :relegion, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :contact_1 %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :contact_1, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :contact_2 %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :contact_2, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :permanent_address %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_area :permanent_address, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :residential_address %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_area :residential_address, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :nationality %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :nationality, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :cast %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :cast, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :category %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :category, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :enrollment_number %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :enrollment_number, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :admission_number %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :admission_number, class: "form-control" %>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-3 form-group">
+              <%= f.label :admission_date %>
+            </div>
+            <div class="col-sm-9 form-group">
+              <%= f.text_field :admission_date, class: "form-control datepicker" %>
+            </div>
+          </div>
+          <div class="actions">
+            <%= f.submit %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">  
+  $(function() {
+    $('.datepicker').datepicker();
+  });
+</script>
