@@ -13,9 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require chat
+//= require users
 //= require turbolinks
 //= require bootstrap
+//= require raphael
+//= require morris
+//= require custom
 //= require jquery.metisMenu
-//= require users
 //= require private_pub
 //= require_tree .

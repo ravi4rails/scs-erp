@@ -15,6 +15,7 @@
  *= require bootstrap-theme
  *= require custom
  *= require font-awesome
+ *= require morris
  *= require morris-0.4.3.min
  *= require chat
  *= require_self

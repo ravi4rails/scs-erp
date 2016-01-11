@@ -46,6 +46,9 @@ group :development do
   gem 'spring'
 end
 
+gem 'morrisjs-rails'
+gem 'raphael-rails'
+
 gem 'devise'
 gem 'cancancan', '~> 1.10'
 gem "rolify"
