@@ -15,9 +15,6 @@
 //= require chat
 //= require turbolinks
 //= require bootstrap
-//= require morris
-//= require custom
-//= require raphael-2.1.0.min
 //= require jquery.metisMenu
 //= require users
 //= require private_pub
