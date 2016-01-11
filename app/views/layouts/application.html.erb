@@ -25,19 +25,16 @@
 
 <body>
 
-<%= render 'layouts/nav' %>
+<%= render 'home/home_nav' %>
+<%= render 'layouts/side_nav' %>
 
-<div class="container">
-  <% if alert %>
-      <div class="alert alert-danger" role="alert"><%= alert %></div>
-  <% end %>
-  <% if notice %>
-      <div class="alert alert-success" role="alert"><%= notice %></div>
-  <% end %>
-
-
-  <%= yield %>
-</div>
+<% if alert %>
+  <div class="alert alert-danger" role="alert"><%= alert %></div>
+<% end %>
+<% if notice %>
+  <div class="alert alert-success" role="alert"><%= notice %></div>
+<% end %>
+<%= yield %>
 <audio id="chatAudio"><source src="/sounds/notification.mp3" type="audio/mpeg"></audio>
 </body>
 

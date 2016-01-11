@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">SCS ADMIN</a> 
+  </div>
+  <div class="collapse navbar-collapse"id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav pull-right">
+      <% if user_signed_in? %>
+        <li><%= link_to "Hi #{current_user.name}", class: "btn btn-primary square-btn-adjust", :style => "padding-bottom:23px;" %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-primary square-btn-adjust", :style => "padding-bottom:23px;" %></li>
+      <% else %>
+        <li><%= link_to "Signin", new_user_session_path %></li>
+        <li><%= link_to "Signup", new_user_registration_path %></li>
+      <% end %>
+    </ul>
+  </div>  
+</nav> 
