@@ -51,3 +51,4 @@ gem 'cancancan', '~> 1.10'
 gem "rolify"
 gem 'private_pub'
 gem 'thin'
+gem 'ckeditor_rails'
