@@ -19,4 +19,3 @@
 //= require bootstrap
 //= require jquery.metisMenu
 //= require private_pub
-//= require_tree .
